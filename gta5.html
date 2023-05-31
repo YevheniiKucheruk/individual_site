@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GTA 5</title>
+        <link rel="stylesheet" href="Styles/style_main.css">
+        <link rel="stylesheet" href="Styles/style_child.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="name">Games for PC</div>
+            <div class="dis">
+                <div class="text_dis">Designed by Yevhenii Kucheruk</div>
+            </div>
+            <a href="index.html"><div class="main_but but">Main page</div></a>
+            <div class="nav">
+                <a href="dying_light.html"><div class="dying_light_button_nav but">Dying Light</div></a>
+                <a href="gta5.html"><div class="gta5_button_nav but">GTA 5</div></a>
+                <a href="rimworld.html"><div class="rimworld_button_nav but">RimWorld</div></a>
+                <a href="ets2.html"><div class="ets2_button_nav but">ETS 2</div></a>
+            </div>
+        </div>
+        <div class="main">
+            <div style="background-image: url(IMG/gta5-icon3.png);" class="logo"></div>
+            <div style="width: 35%;" class="name_of_game">Grand Theft Auto 5</div>
+            <div style="width: 30%;" class="categories">Action, Adventure </div>
+            <div class="slider">
+                <div class="mySlides fade">
+                    <img src="IMG/g-1.jpeg" style="width:100%;" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img src="IMG/g-2.webp" style="width:100%;" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img src="IMG/g-3.jpeg" style="width:100%;" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img src="IMG/g-4.jpeg" style="width:100%;" alt="">
+                </div>
+                <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+                <a class="next" onclick="plusSlide(1)">&#10095</a>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+            <div class="text">
+                <div class="buts">
+                    <div onclick="changeTextToDesc(this)" class="but1 gta">Description</div>
+                    <div onclick="changeTextToSys(this)" class="but2 gta">System</div>
+                    <div onclick="changeTextToDLC(this)" class="but3 gta">DLC</div>
+                </div>
+                <hr style="margin-top: 140px;">
+                <div style="font-size: 45px;" class="main_text">
+                    Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.
+                </div>
+            </div>
+            <div class="download">
+                <a href="torrents/Grand-Theft-Auto-V.torrent" download><div class="dow">DOWNLOAD</div></a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copy">CopyRight ©2023</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
