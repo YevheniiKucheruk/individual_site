@@ -1,0 +1,207 @@
+@import url('https://fonts.cdnfonts.com/css/kite-one');
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 140px;
+    top: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name_of_game{
+    position: absolute;
+    height: 200px;
+    left: 336px;
+    top:430px;
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 200px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.categories{
+    position: absolute;
+    height: 300px;
+    left: 140px;
+    top: 530px;
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #0A75F3;
+}
+/* slider */
+.slider{
+    max-width: 78%;
+    position: relative;
+    left: 11%;
+    top: 759px;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, dot:hover{
+    background-color: #717171;
+}
+.fade{
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+.text{
+    position: absolute;
+    width: 78.15%;
+    height: 700px;
+    left: 10.92%;
+    top:1584px;
+    background: #494949;
+}
+.buts{
+    display: inline-block;
+}
+.but1{
+    cursor: pointer;
+    position: absolute;
+    width: 32%;
+    height: 140px;
+    top: 0;
+    background: #686868;
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.but2{
+    cursor: pointer;
+    position: absolute;
+    width: 32%;
+    height: 140px;
+    left: 33.3%;
+    top: 0;
+    background: #686868;
+    border-radius: 20px;
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.but3{
+    cursor: pointer;
+    position: absolute;
+    width: 33.3%;
+    height: 140px;
+    right: 0;
+    top: 0;
+    background: #686868;
+    border-radius: 20px 0px 0px 20px;
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.main_text{
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100px;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.download{
+    position: absolute;
+    width: 54.68%;
+    height: 200px;
+    top: 2443px;
+    left:22.65%;
+    background: #83D3EC;
+    border-radius: 90px
+}
+.dow{
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 200px;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.download:hover{
+    animation: changecol_down 1s infinite;
+}
+@keyframes changecol_down{
+    0%{
+        background-color:#83D3EC ;
+    }
+    50%{
+        background-color: #2a30d2;
+    }
+    100%{
+        background-color:#83D3EC ;
+    }
+}
